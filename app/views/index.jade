@@ -1,0 +1,11 @@
+extends layout
+
+block body
+  div(ng-controller="App")
+    header
+      .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
+        a.pure-menu-heading(href='') Gulp Angular Express Seed
+        ul
+          li.pure-menu-selected
+            a(href='#') Home
+    div(ng-view)

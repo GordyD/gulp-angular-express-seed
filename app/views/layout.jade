@@ -1,0 +1,28 @@
+doctype html
+html(lang="en", ng-app="app")
+  head
+    meta(charset="utf8")
+    base(href="/")
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/pure-min.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    link(rel='stylesheet', href='css/app.css')
+    title Gulp Angular Express Seed
+  body
+    block body
+    if isDevelopment
+      script(src="js/bower_components/jquery/jquery.js")
+      script(src="js/bower_components/angular/angular.js")
+      script(src="js/bower_components/angular-resource/angular-resource.js")
+      script(src="js/bower_components/angular-cookies/angular-cookies.js")
+      script(src="js/bower_components/angular-sanitize/angular-sanitize.js")
+      script(src="js/bower_components/angular-route/angular-route.js")
+
+      script(src='js/services/welcome.service.js')
+      script(src='js/controllers/app.controller.js')
+      script(src='js/controllers/welcome.controller.js')
+      script(src='js/directives/hello.directive.js')
+      script(src='js/app.core.js')
+      script(src='js/app.main.js')
+    else
+      script(src='js/app.js')
